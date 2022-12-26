@@ -7,6 +7,7 @@ const clientRoutes = require("./routes/clientRoutes");
 const purchaseOrderRoutes = require("./routes/purchaseOrderRoutes");
 const vendorRoutes = require("./routes/vendorRoutes");
 const rawMaterial = require("./routes/rawMaterial");
+const productionRoutes = require("./routes/productionRoutes");
 
 const cors = require("cors");
 app.use(express.json());
@@ -21,5 +22,6 @@ app.use("/api/v1/itemnames", pointAnditemRoutes);
 app.use("/api/v1/purchaseorder", purchaseOrderRoutes);
 app.use("/api/v1/vendor", vendorRoutes);
 app.use("/api/v1/rawMaterial", rawMaterial);
+app.use("/api/v1/production", productionRoutes);
 
 module.exports = app;
